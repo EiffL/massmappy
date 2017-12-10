@@ -53,22 +53,6 @@ setup(
             extra_link_args=extra_link_args,
             extra_compile_args=[]
     ),
-    Extension("src/python/cy_lsst_challenge_1_utils",
-            package_dir=['src'],
-            sources=["src/python/cy_lsst_challenge_1_utils.pyx"],
-            include_dirs=include_dirs,
-            libraries=[],
-            extra_link_args=extra_link_args,
-            extra_compile_args=[]
-    ),
-    Extension("src/python/cy_eb_sep",
-            package_dir=['src'],
-            sources=["src/python/cy_eb_sep.pyx"],
-            include_dirs=include_dirs,
-            libraries=["s2let", "so3", "fftw3", "ssht"],
-            extra_link_args=extra_link_args,
-            extra_compile_args=[]
-    ),
     Extension("src/python/cy_DES_utils",
             package_dir=['src'],
             sources=["src/python/cy_DES_utils.pyx"],
